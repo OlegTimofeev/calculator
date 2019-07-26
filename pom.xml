@@ -5,7 +5,6 @@
     <groupId>com.epam.calculator</groupId>
     <artifactId>calculator</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <name>calculator</name>
     <description>Add project description here</description>
 
@@ -30,6 +29,18 @@
                 <configuration>
                     <source>1.9</source>
                     <target>1.9</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.epam.calculator.Main</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>

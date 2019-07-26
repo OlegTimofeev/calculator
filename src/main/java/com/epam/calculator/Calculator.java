@@ -16,7 +16,7 @@ public class Calculator {
     }
 
     public Number div(double on, double tw) {
-        if (on != 0) {
+        if (tw != 0) {
             return on / tw;
         } else {
             throw (new IllegalArgumentException("Деление на ноль"));

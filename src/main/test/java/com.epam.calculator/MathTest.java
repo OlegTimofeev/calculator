@@ -33,7 +33,7 @@ public class MathTest {
     }
     @Test(expected = IllegalArgumentException.class)
     public void divisionTestErr(){
-        calculator.div(0,3);
+        calculator.div(3,0);
 
     }
     @Test
