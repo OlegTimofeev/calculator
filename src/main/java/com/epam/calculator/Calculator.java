@@ -1,7 +1,10 @@
 package com.epam.calculator;
 
+import org.apache.log4j.Logger;
+
 public class Calculator {
 
+    final static Logger logger = Logger.getLogger(Calculator.class);
 
     public Number add(double on, double tw) {
             return on + tw;
@@ -19,7 +22,8 @@ public class Calculator {
         if (tw != 0) {
             return on / tw;
         } else {
-            throw (new IllegalArgumentException("Деление на ноль"));
+            logger.error("Деление на ноль");
+            throw (new IllegalArgumentException());
         }
     }
 
@@ -27,6 +31,7 @@ public class Calculator {
         if (on > 0) {
                 return Math.sqrt(on);
         }
-        throw (new IllegalArgumentException("Корень из отрицательного числа"));
+        logger.error("Деление на ноль");
+        throw (new IllegalArgumentException());
     }
 }
