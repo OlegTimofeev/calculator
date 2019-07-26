@@ -5,13 +5,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class QueueCalcTest {
-    private static final String QUEUE1 = "4 + 8 * 11 - 3 / 3 - 22 / 4 + sqrt 9";
+    private static final String QUEUE1 = "4 + 8 * 11 - 3 / 3 - 22 / 4 + sqrt9";
     private static final String ANSWER1 = "88.5";
     private static final String QUEUE2 = "-3 + -4 / 2";
-    private static final String ANSWER2 = "-5";
+    private static final String ANSWER2 = "-5.0";
     private static final String QUEUE3 = "-3 + 3 + 0 * 3 / 4";
-    private static final String QUEUE4 = "-3 - -3 + 1 * 3 / 4";
-    private static final String ANSWER4 = "0.75";
+    private static final String QUEUE4 = "-3.66 - -3 + 1 * 3 / 4";
+    private static final String ANSWER4 = "0.09";
 
     QueueCalculator queueCalculator = new QueueCalculator();
 
